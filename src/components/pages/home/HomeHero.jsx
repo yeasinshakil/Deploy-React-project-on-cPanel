@@ -1,9 +1,11 @@
 import React from 'react';
-import homeHero from '../../../../assets/homepage-hero-2x.webp';
+import homeHero from '../../../assets/homepage-hero-2x.webp';
 import {TbWorld} from 'react-icons/tb';
 import {AiOutlineQuestionCircle} from 'react-icons/ai';
 import {BsHeadset, BsPlus} from 'react-icons/bs';
 import {GoPlus} from 'react-icons/go';
+import {SiAdguard} from 'react-icons/si';
+import CountDown from './CountDown';
 
 const HomeHero = () => {
     return (
@@ -29,8 +31,20 @@ const HomeHero = () => {
                     <GoPlus/>
                     <p className=' text-2xl'>3 Months Free</p>
                 </div>
+
+                {/* Countdown section */}
+                <div className=' mt-6'>
+                    <CountDown></CountDown>
+                </div>
+                <div className=' mt-6 flex justify-center items-center w-[260px] bg-blue text-white rounded-sm hover:bg-opacity-90 px-10 py-3 cursor-pointer transition-all'>
+                    <button className=' text-lg'>Claim Deal</button>
+                </div>
+                <div className=' flex justify-center items-center gap-2 mt-4'>
+                    <SiAdguard/>
+                    <p className=' text-lg'>30-Day Money-Back Guarantee</p>
+                </div>
             </div>
-            <div>
+            <div className=' mt-20'>
                 <img src={homeHero} alt="" className=' w-full' />
             </div>
         </div>

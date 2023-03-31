@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import HomeHero from './components/pages/home/navbar/HomeHero';
+import HomeHero from './components/pages/home/HomeHero';
 import NavBar from './components/pages/home/navbar/NavBar';
 import Ukraine from './components/ukraine/Ukraine';
 
