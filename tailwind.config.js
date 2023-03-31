@@ -18,7 +18,8 @@ export default {
       'bermuda': '#78dcca',
       'violet' : '#2e1065',
       'blue' : '#1d4ed8',
-      'white' : '#fff'
+      'white' : '#fff',
+      'green' : 'rgb(0, 182, 122)'
     },
     extend: {},
   },

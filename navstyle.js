@@ -21,9 +21,9 @@ const Nav = () => {
     return (
         <div className={`nav ${show && "nav_black"}`}>
             <div className="nav_content">
-               <Link to='/'>
-               <img className='nav_logo' src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="" />
-               </Link>
+                <Link to='/'>
+                    <img className='nav_logo' src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="" />
+                </Link>
                 <Link to='/profile'>
                     <img className='nav_avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
                 </Link>
@@ -34,3 +34,11 @@ const Nav = () => {
 };
 
 export default Nav;
+
+<div className="product_rating">
+    {Array(ratings)
+        .fill()
+        .map((_, i) => (
+            <p>⭐</p>
+        ))}
+</div>

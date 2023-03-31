@@ -9,7 +9,7 @@ import CountDown from './CountDown';
 
 const HomeHero = () => {
     return (
-        <div className='px-10 py-4 sm:px-24 sm:py-8 w-full grid grid-cols-1 sm:grid-cols-2'>
+        <div className='px-10 py-4 sm:px-24 sm:py-8 w-full grid grid-cols-1 sm:grid-cols-2 z-10'>
             <div className=' flex flex-col justify-center items-center sm:justify-start sm:items-start'>
                 <div>
                 <h1 className=' text-2xl text-center sm:text-start sm:text-5xl font-semibold text-blue-950 py-2 text-violet'>Everything You Need to Create a Website</h1>

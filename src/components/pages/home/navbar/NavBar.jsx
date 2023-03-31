@@ -2,11 +2,27 @@ import React from 'react';
 import logo from '../../../../assets/Hostinger_Logo.png';
 import usaFlag from '../../../../assets/Flag_of_the_United_States.png';
 import {BiChevronDown} from 'react-icons/bi';
+import { useState } from 'react';
+import { useEffect } from 'react';
 const NavBar = () => {
+    const [shadow, setShadow] = useState(false);
+
+    const shadowNavbar = () => {
+        if(window.scrollY > 100) {
+            setShadow(true)
+        } else{
+            setShadow(false)
+        }
+    }
+
+    useEffect(()=> {
+        window.addEventListener('scroll', shadowNavbar);
+        return ()=> window.removeEventListener('scroll', shadowNavbar);
+    }, [])
 
     return (
-        <div className='w-[100%] h-[60px]  flex items-center justify-between px-8 py-10'>
-            <div className=' flex items-center  gap-9 '>
+        <div className={`sticky top-0 w-[100%] h-[60px]  flex items-center justify-between px-8 py-10 ${shadow && 'shadow-lg'} z-50`}>
+            <div className=' flex items-center gap-9 '>
                 <img src={logo} alt="HOSTINGER" className='w-[100%] max-w-[160px] max-h-[80px]' />
                 <div className=' flex items-center gap-1'>
                     <img src={usaFlag} alt="" className=' w-[30px] h-[15px]' />
