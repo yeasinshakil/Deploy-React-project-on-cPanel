@@ -86,7 +86,7 @@ const HostingPack = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full flex col-span-3 justify-center items-center mt-6 pt-2 border-t border-purple/30'>
+            <div className=' w-full flex col-span-3 justify-center items-center mt-6 pt-2 border-t border-silver/30'>
                 <h1 className=' flex items-center font-medium text-primary'>See all features <BiChevronDown/> </h1>
             </div>
         </div>
