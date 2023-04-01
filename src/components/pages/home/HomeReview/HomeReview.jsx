@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { BsFillStarFill } from "react-icons/bs"
-
+import googleLogo from '../../../../assets/googlelogo.png';
+import hostadvice from '../../../../assets/hostadvice.webp';
+import wpbeginner from '../../../../assets/wpbeginner-logo-520.png';
 
 
 function HomeReview() {
@@ -10,7 +12,7 @@ function HomeReview() {
 
     return (
         <div className='px-24 mt-20 z-20'>
-            <div className=' grid grid-cols-4 mb-11'>
+            <div className=' grid grid-cols-1 gap-5 sm:grid-cols-4 mb-11'>
                 <div>
 
                     <div className=' flex gap-2 items-center text-3xl text-green font-semibold mb-3'>
@@ -34,7 +36,7 @@ function HomeReview() {
                 <div>
 
                     <div className='text-3xl text-green font-semibold mb-3'>
-                        <h1>Google</h1>
+                        <img className=' w-[90px]' src={googleLogo} alt="" />
                     </div>
                     <div className=' flex gap-1'>
                         {Array(ratings)
@@ -46,14 +48,14 @@ function HomeReview() {
                             ))}
                     </div>
                     <div className=' mt-2 text-sm'>
-                        <p>Trust Score <span className='font-semibold'>4.6</span> | <span className=' font-semibold'>14,313</span> reviews</p>
+                        <p>Trust Score <span className='font-semibold'>4.8</span> | <span className=' font-semibold'>1287</span> reviews</p>
                     </div>
                 </div>
 
                 <div>
 
                     <div className='text-3xl text-green font-semibold mb-3'>
-                        <h1>Google</h1>
+                       <img className=' w-[100px]' src={hostadvice} alt="" />
                     </div>
                     <div className=' flex gap-1'>
                         {Array(ratings)
@@ -65,7 +67,7 @@ function HomeReview() {
                             ))}
                     </div>
                     <div className=' mt-2 text-sm'>
-                        <p>Trust Score <span className='font-semibold'>4.6</span> | <span className=' font-semibold'>14,313</span> reviews</p>
+                        <p>Trust Score <span className='font-semibold'>4.9</span> | <span className=' font-semibold'>10,187</span> reviews</p>
                     </div>
                 </div>
 
@@ -73,9 +75,9 @@ function HomeReview() {
                 <div>
 
                     <div className='text-3xl text-green font-semibold mb-3'>
-                        <h1>Google</h1>
+                        <img className='w-[144px]' src={wpbeginner} alt="" />
                     </div>
-                    <div className=' flex gap-1'>
+                    <div className=' flex gap-1 mt-[-20px]'>
                         {Array(ratings)
                             .fill()
                             .map((_, i) => (

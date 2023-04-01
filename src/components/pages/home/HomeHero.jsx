@@ -44,7 +44,7 @@ const HomeHero = () => {
                     <p className=' text-lg'>30-Day Money-Back Guarantee</p>
                 </div>
             </div>
-            <div className=' mt-20'>
+            <div className=' mt-4 sm:mt-20'>
                 <img src={homeHero} alt="" className=' w-full' />
             </div>
         </div>
