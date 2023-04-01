@@ -2,6 +2,7 @@ import React from 'react';
 import { BsCheck } from 'react-icons/bs';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import { GoPlus } from 'react-icons/go';
+import { BiChevronDown } from 'react-icons/bi';
 
 const HostingPack = () => {
     return (
@@ -85,7 +86,9 @@ const HostingPack = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full text-center row-span-3'>See all features</div>
+            <div className=' w-full flex col-span-3 justify-center items-center mt-6 pt-2 border-t border-purple/30'>
+                <h1 className=' flex items-center font-medium text-primary'>See all features <BiChevronDown/> </h1>
+            </div>
         </div>
     );
 };

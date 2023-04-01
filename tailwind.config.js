@@ -9,7 +9,7 @@ export default {
       transparent: 'transparent',
       current: 'currentColor',
       'primary': '#2f1c6a',
-      'purple': '#3f3cbb',
+      'purple': '#673de6',
       'midnight': '#121063',
       'metal': '#565584',
       'tahiti': '#3ab7bf',

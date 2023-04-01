@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import HomeAllInOne from './components/pages/home/HomeAllinone/HomeAllInOne';
+import HomeDataCeter from './components/pages/home/HomeDataCenter/HomeDataCeter';
 import HomeHero from './components/pages/home/HomeHero';
 import HostingPack from './components/pages/home/HomeHosting/HostingPack';
 import HomeReview from './components/pages/home/HomeReview/HomeReview';
@@ -18,6 +20,8 @@ function App() {
           <HomeHero></HomeHero>
           <HomeReview></HomeReview>
           <HostingPack></HostingPack>
+          <HomeDataCeter></HomeDataCeter>
+          <HomeAllInOne></HomeAllInOne>
           </>
         }></Route>
         
