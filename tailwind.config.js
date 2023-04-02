@@ -15,7 +15,7 @@ export default {
       'tahiti': '#3ab7bf',
       'silver': '#727586',
       'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'primary-dark': '#5025d1',
       'violet' : '#2e1065',
       'blue' : '#1d4ed8',
       'white' : '#fff',
