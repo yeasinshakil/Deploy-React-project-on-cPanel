@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import CustomSupport from './components/pages/home/customSupport/CustomSupport';
 import HomeAllInOne from './components/pages/home/HomeAllinone/HomeAllInOne';
 import HomeDataCeter from './components/pages/home/HomeDataCenter/HomeDataCeter';
 import HomeHero from './components/pages/home/HomeHero';
@@ -24,6 +25,7 @@ function App() {
           <HomeDataCeter></HomeDataCeter>
           <HomeAllInOne></HomeAllInOne>
           <MaxmizeSpeed></MaxmizeSpeed>
+          <CustomSupport></CustomSupport>
           </>
         }></Route>
         

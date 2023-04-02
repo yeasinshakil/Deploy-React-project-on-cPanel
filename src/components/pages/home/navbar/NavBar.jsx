@@ -8,7 +8,7 @@ const NavBar = () => {
     const [shadow, setShadow] = useState(false);
 
     const shadowNavbar = () => {
-        if(window.scrollY > 100) {
+        if(window.scrollY > 70) {
             setShadow(true)
         } else{
             setShadow(false)
@@ -21,7 +21,7 @@ const NavBar = () => {
     }, [])
 
     return (
-        <div className={`sticky top-0 w-[100%] h-[60px]  flex items-center justify-between px-8 py-10 ${shadow && 'shadow-lg'} z-50`}>
+        <div className={`sticky top-0 w-[100%] h-[60px] bg-white flex items-center justify-between px-8 py-10 ${shadow && 'shadow-lg'} z-50`}>
             <div className=' flex items-center gap-9 '>
                 <img src={logo} alt="HOSTINGER" className='w-[100%] max-w-[160px] max-h-[80px]' />
                 <div className=' flex items-center gap-1'>
