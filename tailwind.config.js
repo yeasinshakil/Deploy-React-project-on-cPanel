@@ -19,7 +19,8 @@ export default {
       'violet' : '#2e1065',
       'blue' : '#1d4ed8',
       'white' : '#fff',
-      'green' : 'rgb(0, 182, 122)'
+      'green' : 'rgb(0, 182, 122)',
+      'lightGray': '#fafbff',
     },
     extend: {},
   },
