@@ -36,7 +36,7 @@ function MaxmizeSpeed() {
                 {recommendData.map((data, i)=> (
                     <div
                     key={i}
-                    className=' w-[350px] h-[220px] bg-[#f4f5ff] px-10 py-8 rounded-sm'>
+                    className=' w-[350px] h-[220px] bg-gray px-10 py-8 rounded-sm'>
                         <img src={data.img} alt="" className=' pb-4' />
                         <p>{data.description}</p>
                     </div>

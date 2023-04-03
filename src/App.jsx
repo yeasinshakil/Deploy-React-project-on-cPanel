@@ -11,6 +11,7 @@ import MaxmizeSpeed from './components/pages/home/HomeMaxmizeSpeed/MaxmizeSpeed'
 import HomeReview from './components/pages/home/HomeReview/HomeReview';
 import NavBar from './components/pages/home/navbar/NavBar';
 import Ukraine from './components/ukraine/Ukraine';
+import FeatureClients from './components/pages/home/FeatureClients/FeatureClients';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <CustomSupport></CustomSupport>
           <AdvancedSecurity></AdvancedSecurity>
           <FreeMigration></FreeMigration>
+          <FeatureClients></FeatureClients>
           </>
         }></Route>
         

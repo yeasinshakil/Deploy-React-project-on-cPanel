@@ -76,7 +76,7 @@ function HomeAllInOne() {
             <div className=' grid grid-cols-3 gap-6 mx-24'>
 
                 {reviewData.map((data, i)=> (
-                    <div className=' h-[220px] bg-[#fafbff] px-4 py-8 rounded-sm relative mb-16'>
+                    <div className=' h-[220px] bg-gray px-4 py-8 rounded-sm relative mb-16'>
 
                         <AllInOneReview 
                         key={i}
