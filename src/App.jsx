@@ -12,16 +12,18 @@ import HomeReview from './components/pages/home/HomeReview/HomeReview';
 import NavBar from './components/SharedComponents/navbar/NavBar';
 import Ukraine from './components/ukraine/Ukraine';
 import FeatureClients from './components/pages/home/FeatureClients/FeatureClients';
+import Footer from './components/SharedComponents/Footer/Footer';
 
 function App() {
 
   return (
     <div className="App">
       <Ukraine/>
+      <NavBar></NavBar>
       <Routes>
         <Route path='/' element={
           <>
-          <NavBar></NavBar>
+          
           <HomeHero></HomeHero>
           <HomeReview></HomeReview>
           <HostingPack></HostingPack>
@@ -36,6 +38,7 @@ function App() {
         }></Route>
         
       </Routes>
+      <Footer></Footer>
     </div>
   )
 }
