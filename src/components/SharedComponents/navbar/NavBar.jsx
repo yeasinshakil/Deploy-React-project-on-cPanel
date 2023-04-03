@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../../../assets/Hostinger_Logo.png';
-import usaFlag from '../../../../assets/Flag_of_the_United_States.png';
+import logo from '../../../assets/Hostinger_Logo.png';
+import usaFlag from '../../../assets/Flag_of_the_United_States.png';
 import {BiChevronDown} from 'react-icons/bi';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -21,7 +21,7 @@ const NavBar = () => {
     }, [])
 
     return (
-        <div className={`sticky top-0 w-[100%] h-[60px] bg-white flex items-center justify-between px-8 py-10 ${shadow && 'shadow-lg'} z-50`}>
+        <div className={`sticky top-0 w-[100%] h-[60px] ${shadow && 'bg-white'} flex items-center justify-between px-8 py-10 ${shadow && 'shadow-lg'} z-50`}>
             <div className=' flex items-center gap-9 '>
                 <img src={logo} alt="HOSTINGER" className='w-[100%] max-w-[160px] max-h-[80px]' />
                 <div className=' flex items-center gap-1'>

@@ -9,7 +9,7 @@ import HomeHero from './components/pages/home/HomeHero';
 import HostingPack from './components/pages/home/HomeHosting/HostingPack';
 import MaxmizeSpeed from './components/pages/home/HomeMaxmizeSpeed/MaxmizeSpeed';
 import HomeReview from './components/pages/home/HomeReview/HomeReview';
-import NavBar from './components/pages/home/navbar/NavBar';
+import NavBar from './components/SharedComponents/navbar/NavBar';
 import Ukraine from './components/ukraine/Ukraine';
 import FeatureClients from './components/pages/home/FeatureClients/FeatureClients';
 
