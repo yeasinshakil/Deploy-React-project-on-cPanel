@@ -32,7 +32,7 @@ function MaxmizeSpeed() {
                 </div>
             </div>
 
-            <div className=' grid grid-flow-col-1 lg:grid-cols-3 justify-center items-center gap-4 mt-8'>
+            <div className=' grid grid-row-col-1 lg:grid-cols-3 justify-center items-center gap-4 mt-8'>
                 {recommendData.map((data, i)=> (
                     <div
                     key={i}

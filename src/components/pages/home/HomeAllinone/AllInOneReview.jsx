@@ -13,7 +13,7 @@ function AllInOneReview({ title, description, rating }) {
 
 
             <div className=''>
-                <div className=' flex items-center gap-1 absolute bottom-6 '>
+                <div className=' flex items-center gap-1 absolute lg:bottom-6 bottom-4 '>
                     {Array(rating)
                         .fill()
                         .map((_, i) => (
@@ -22,7 +22,7 @@ function AllInOneReview({ title, description, rating }) {
                             </p>
                         ))}
                 </div>
-                <p className=' absolute bottom-6 right-16 text-2xl text-primary cursor-pointer'>
+                <p className=' absolute lg:bottom-6 bottom-4 right-6 lg:right-16 text-2xl text-primary cursor-pointer'>
                     <BiChevronRight/>
                 </p>
             </div>
