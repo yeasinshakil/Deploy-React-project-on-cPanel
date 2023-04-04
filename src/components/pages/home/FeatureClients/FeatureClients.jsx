@@ -50,7 +50,7 @@ const FeatureClients = () => {
             </div>
 
             
-                <button className=' border-2 border-primary-dark px-16 py-2 rounded-md text-lg font-medium text-primary-dark '>Browse more client stories</button>
+                <button className=' border-2 border-primary-dark px-16 py-2 rounded-md text-lg font-medium text-primary-dark hover:bg-primary/20 transition duration-300 '>Browse more client stories</button>
                 <div className=' px-24 py-6 w-full flex flex-col justify-center items-center'>
                     <h1 className=' text-4xl font-semibold text-primary my-10'>Join 1,597,691 Website Owners</h1>
                     <button className=' px-20 py-2 bg-purple/90 hover:bg-purple rounded-md transition-all duration-300 text-lg text-white font-medium mb-6 '>Get Started</button>

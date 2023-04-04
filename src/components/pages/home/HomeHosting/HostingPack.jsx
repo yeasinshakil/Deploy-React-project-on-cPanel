@@ -6,8 +6,8 @@ import { BiChevronDown } from 'react-icons/bi';
 
 const HostingPack = () => {
     return (
-        <div className=' mx-24 px-4 py-5 my-10 mt-24 grid grid-cols-3 border rounded-md shadow-md border-purple/30'>
-            <div className=' w-[350px] py-14'>
+        <div className=' mx-10 sm:mx-24 sm:px-4 sm:py-5 my-10 mt-24 grid grid-cols-1 sm:grid-cols-3 justify-center items-center border rounded-md shadow-md border-purple/30'>
+            <div className=' w-[350px] sm:py-14 py-6 hidden sm:block'>
                 <div>
                     <div className='flex items-center justify-between gap-10 mb-2'>
                         <p className=' flex items-center gap-2 text-primary'><BsCheck className=' text-green' /> <span className=' font-medium'>Unmetered</span> traffic (Unlimited GB)</p>
@@ -40,7 +40,7 @@ const HostingPack = () => {
                 </div>
             </div>
 
-            <div className=' flex flex-col justify-center items-center border-x border-x-silver/30  w-[350px]'>
+            <div className=' flex flex-col justify-center items-center sm:border-x border-x-silver/30 w-[280px] sm:w-[350px] py-8 sm:py-0'>
                 <h1 className=' font-semibold text-center text-2xl mb-4 text-primary'>Web Hosting</h1>
                 <div className='flex justify-center items-center gap-3 mb-2'>
                     <p className=' text-purple'>$11.09</p>
@@ -54,7 +54,7 @@ const HostingPack = () => {
                 <p className=' mt-3 text-silver'>$6.99/mo when you renew</p>
             </div>
 
-            <div className=' w-[350px] py-14'>
+            <div className=' w-[350px] sm:py-14 py-6 hidden sm:block'>
                 <div>
                     <div className='flex items-center justify-between gap-10 mb-2'>
                         <p className=' flex items-center gap-2 text-primary'><BsCheck className=' text-green' /> <span className=' font-medium'>Unmetered</span> traffic (Unlimited GB)</p>
@@ -86,7 +86,7 @@ const HostingPack = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full flex col-span-3 justify-center items-center mt-6 pt-2 border-t border-silver/30'>
+            <div className=' w-full flex col-span-3 justify-center items-center mt-1 sm:mt-6 pt-2 border-t border-silver/30'>
                 <h1 className=' flex items-center font-medium text-primary'>See all features <BiChevronDown/> </h1>
             </div>
         </div>
