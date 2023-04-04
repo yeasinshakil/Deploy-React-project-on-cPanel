@@ -21,10 +21,10 @@ function AdvancedSecurity() {
         },
     ]
     return (
-        <div className=' px-24 bg-purple pt-20 pb-10'>
-            <div className=' grid grid-cols-2 items-center'>
-                <img src={maximizeimg} alt="" />
-                <div className=' px-20 text-white font-medium'>
+        <div className=' px-6 sm:px-10 lg:px-24 bg-purple pt-20 pb-10'>
+            <div className=' flex flex-col-reverse lg:flex-row items-center'>
+                <img src={maximizeimg} alt="" className=' w-full max-w-[520px]'/>
+                <div className=' lg:px-20 text-white font-medium'>
                     <h1 className=' text-4xl text-white font-semibold mb-10'>Advanced Security Features</h1>
                     <p className=' flex my-6'><span className=' text-xl  font-bold mr-2'><BsCheck /></span> Get unlimited SSL security certificates to encrypt your websites’ traffic.</p>
                     <p className=' flex my-6'><span className=' text-xl  font-bold mr-2'><BsCheck /></span> Protect your website from DDoS attacks with Cloudflare protected nameservers.</p>
@@ -33,11 +33,11 @@ function AdvancedSecurity() {
                 </div>
             </div>
 
-            <div className=' grid grid-cols-3 justify-center items-center mt-8'>
+            <div className=' grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-5 lg:mt-8'>
                 {recommendData.map((data, i) => (
                     <div
                         key={i}
-                        className=' w-[350px] h-[220px] bg-primary-dark text-white px-10 py-8 rounded-sm'>
+                        className=' lg:w-[350px] lg:h-[220px] bg-primary-dark text-white px-10 py-8 rounded-sm'>
                         <img src={data.img} alt="" className=' pb-4' />
                         <p className=' font-medium'>{data.description}</p>
                     </div>
