@@ -31,10 +31,10 @@ function HomeAllInOne() {
     return (
         <div>
 
-            <div className='px-10 py-4 sm:px-24 sm:py-8 w-full grid grid-cols-1 sm:grid-cols-2 z-10'>
-                <div className=' flex flex-col justify-center items-center sm:justify-start sm:items-start'>
-                    <div className=' w-[500px] py-14'>
-                        <h1 className=' text-5xl font-semibold text-primary my-10'>All-In-One Website Solution</h1>
+            <div className='px-6 sm:px-10 py-4 lg:px-24 sm:py-8 w-full grid grid-cols-1 lg:grid-cols-2 z-10'>
+                <div className=' flex flex-col justify-start items-start'>
+                    <div className=' lg:w-[500px] py-14'>
+                        <h1 className=' text-3xl sm:text-5xl font-semibold text-primary my-10'>All-In-One Website Solution</h1>
                         <div>
                             <div className='flex items-center mb-4'>
                                 <p className=' flex items-center gap-2 text-primary text-lg'><BsCheck className=' text-green' /> Manage up to 100 websites.</p>
@@ -69,14 +69,14 @@ function HomeAllInOne() {
                 </div>
 
 
-                <div className=' mt-4 sm:mt-20'>
+                <div className=' mt-1 lg:mt-20'>
                     <img src={allInOne} alt="" className=' w-full' />
                 </div>
             </div>
-            <div className=' grid grid-cols-3 gap-6 mx-24'>
+            <div className=' grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-6 mx-6 lg:mx-24'>
 
                 {reviewData.map((data, i)=> (
-                    <div className=' h-[220px] bg-gray px-4 py-8 rounded-sm relative mb-16'>
+                    <div className=' h-[220px] bg-gray px-4 py-8 rounded-sm relative mb-6 sm:mb-8 lg:mb-16'>
 
                         <AllInOneReview 
                         key={i}
