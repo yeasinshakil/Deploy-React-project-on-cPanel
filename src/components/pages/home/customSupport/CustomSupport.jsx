@@ -31,10 +31,10 @@ function CustomSupport() {
     return (
         <div>
 
-            <div className='px-10 py-4 sm:px-24 sm:py-8 w-full grid justify-center items-center grid-cols-1 sm:grid-cols-2 z-10'>
+            <div className='px-6 sm:px-10 py-4 lg:px-24 lg:py-8 w-full grid justify-center items-center grid-cols-1 lg:grid-cols-2 z-10'>
                 <div className=' flex flex-col justify-center items-center sm:justify-start sm:items-start'>
-                    <div className=' w-[500px] py-14'>
-                        <h1 className=' text-4xl font-semibold text-primary my-10'>Our Team is Here to Help You 24/7</h1>
+                    <div className=' lg:w-[500px] lg:py-14'>
+                        <h1 className=' text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary my-4 sm:my-6 lg:my-10'>Our Team is Here to Help You 24/7</h1>
                         <div>
                             <div className='flex items-center mb-4'>
                                 <p className=' flex items-center gap-2 text-primary text-lg'><BsCheck className=' text-green' /> Receive help from our agents anytime via live chat support.</p>
@@ -58,14 +58,14 @@ function CustomSupport() {
                 </div>
 
 
-                <div className=' mt-4 sm:mt-20'>
+                <div className=' mt-4 lg:mt-20'>
                     <img src={allInOne} alt="" className=' w-full' />
                 </div>
             </div>
-            <div className=' grid grid-cols-3 gap-6 mx-24'>
+            <div className=' grid grid-cols-1 lg:grid-cols-3 gap-6 mx-6 lg:mx-24'>
 
                 {reviewData.map((data, i)=> (
-                    <div className=' h-[220px] bg-gray px-4 py-8 rounded-sm relative mb-16'>
+                    <div className=' h-[220px] sm:h-[200px] lg:h-[220px] bg-gray px-4 py-8 rounded-sm relative lg:mb-16'>
 
                         <AllInOneReview 
                         key={i}
@@ -77,8 +77,8 @@ function CustomSupport() {
                 ))}
             </div>
 
-            <div className=' px-24 py-6 w-full flex flex-col justify-center items-center'>
-                <h1 className=' text-4xl font-semibold text-primary my-10'>Join 1,597,691 Website Owners</h1>
+            <div className=' px-6 sm:px-10 lg:px-24 py-6 w-full flex flex-col justify-center items-center'>
+                <h1 className=' text-2xl sm:text-4xl font-semibold text-primary my-5 sm:my-10 text-center'>Join 1,597,691 Website Owners</h1>
                 <button className=' px-20 py-2 bg-purple/90 hover:bg-purple rounded-lg transition-all duration-300 text-lg text-white font-medium mb-6 '>Get Started</button>
                 <p className=' flex items-center gap-1 text-primary text-base'><BsCheck className=' text-green text-lg' />30-Day Money-Back Guarantee</p>
             </div>

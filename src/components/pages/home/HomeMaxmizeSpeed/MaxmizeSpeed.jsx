@@ -21,22 +21,22 @@ function MaxmizeSpeed() {
         },
     ]
     return (
-        <div className=' px-24 bg-lightGray pt-20 pb-10'>
-            <div className=' grid grid-cols-2 items-center'>
-                <img src={maximizeimg} alt="" />
-                <div className=' px-20'>
-                    <h1 className=' text-4xl text-primary font-semibold mb-10'>Maximize Website Speed</h1>
+        <div className=' px-6 sm:px-10 py-4 lg:px-24 sm:py-8 bg-lightGray pt-20 pb-10'>
+            <div className=' flex items-center flex-col-reverse lg:flex-row'>
+                <img src={maximizeimg} alt="" className=' w-full lg:max-w-[500px]' />
+                <div className=' lg:px-20'>
+                    <h1 className=' text-3xl sm:text-4xl text-primary font-semibold mb-10'>Maximize Website Speed</h1>
                     <p className=' flex my-6'><span className=' text-xl text-green font-bold mr-2'><BsCheck /></span> Maximize performance with LiteSpeed Web Server technology.</p>
                     <p className=' flex my-6'><span className=' text-xl text-green font-bold mr-2'><BsCheck /></span> Enjoy optimized performance with advanced cache solutions.</p>
                     <p className=' flex my-6'><span className=' text-xl text-green font-bold mr-2'><BsCheck /></span> Reduce website response times up to 3 times with Object Cache for WordPress.</p>
                 </div>
             </div>
 
-            <div className=' grid grid-cols-3 justify-center items-center mt-8'>
+            <div className=' grid grid-row-col-1 lg:grid-cols-3 justify-center items-center gap-4 mt-8'>
                 {recommendData.map((data, i)=> (
                     <div
                     key={i}
-                    className=' w-[350px] h-[220px] bg-gray px-10 py-8 rounded-sm'>
+                    className=' lg:w-[350px] sm:h-[180px] lg:h-[220px] bg-gray px-10 py-8 rounded-sm'>
                         <img src={data.img} alt="" className=' pb-4' />
                         <p>{data.description}</p>
                     </div>

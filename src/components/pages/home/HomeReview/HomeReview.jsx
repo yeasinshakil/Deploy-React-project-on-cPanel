@@ -11,8 +11,8 @@ function HomeReview() {
     const [ratings, setRatings] = useState(5);
 
     return (
-        <div className='px-24 mt-20 z-20'>
-            <div className=' grid grid-cols-1 gap-5 sm:grid-cols-4 mb-11'>
+        <div className=' px-12 sm:px-16 lg:px-24 mt-6 sm:mt-14 lg:mt-20 z-20'>
+            <div className=' grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-5 lg:grid-cols-4 lg:mb-11'>
                 <div>
 
                     <div className=' flex gap-2 items-center text-3xl text-green font-semibold mb-3'>
