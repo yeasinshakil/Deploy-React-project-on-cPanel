@@ -8,6 +8,11 @@ import {SiAdguard} from 'react-icons/si';
 import CountDown from './CountDown';
 
 const HomeHero = () => {
+    const d = new Date();
+    const ms = d.getTime();
+   
+    const timestampscount = ms + 7776000000
+;
     return (
         <div className='px-10 py-4 sm:px-24 sm:py-8 w-full grid grid-cols-1 sm:grid-cols-2 z-10'>
             <div className=' flex flex-col justify-center items-center sm:justify-start sm:items-start'>
@@ -34,8 +39,12 @@ const HomeHero = () => {
 
                 {/* Countdown section */}
                 <div className=' mt-6'>
-                    <CountDown></CountDown>
+                    <CountDown
+                    countdownTimeStampMs= {timestampscount} 
+                    ></CountDown>
                 </div>
+
+
                 <div className=' mt-6 flex justify-center items-center w-[260px] bg-blue text-white rounded-sm hover:bg-opacity-90 px-10 py-3 cursor-pointer transition-all'>
                     <button className=' text-lg'>Claim Deal</button>
                 </div>
